@@ -1,3 +1,9 @@
+
+
+document.getElementById("closeModal").addEventListener("click", function () {
+  document.getElementById("modal").classList.add("hidden");
+});
+
 document.getElementById("event-form").addEventListener("submit", function (e) {
   e.preventDefault()
   const formData = new FormData(this)
@@ -7,7 +13,7 @@ document.getElementById("event-form").addEventListener("submit", function (e) {
   const endTime = formData.get("end-time");
   const eventDescription = formData.get("event-description");
   const eventLocation = formData.get("event-location");
-  if(eventName&&eventDate&&startTime&&endTime&&eventDescription&&eventLocation){
+  if (eventName && eventDate && startTime && endTime && eventDescription && eventLocation) {
     const eventData = {
       eventName,
       eventDate,
@@ -16,14 +22,15 @@ document.getElementById("event-form").addEventListener("submit", function (e) {
       eventDescription,
       eventLocation
     };
-  
+
     console.log(eventData);
     this.reset()
 
-  }else{
-    alert("fill all fields")
+  } else {
+    document.getElementById("modal").classList.remove("hidden");
+    return;
   }
- ;
+  ;
 
 
 
