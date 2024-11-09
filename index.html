@@ -18,32 +18,32 @@
     <form id="event-form" class="grid gap-4">
       <div class="flex flex-col">
         <label for="event-name" class="text-gray-700">Event Name:</label>
-        <input type="text" id="event-name" maxlength="100" class="border rounded p-2" placeholder="Enter event name" autofocus>
+        <input type="text" id="event-name" name="event-name" maxlength="100" class="border rounded p-2" placeholder="Enter event name" autofocus>
       </div>
 
       <div class="flex flex-col">
         <label for="event-date" class="text-gray-700">Event Date:</label>
-        <input type="date" id="event-date" class="border rounded p-2">
+        <input type="date" id="event-date" name="event-date" class="border rounded p-2">
       </div>
 
       <div class="flex flex-col">
         <label for="start-time" class="text-gray-700">Start Time:</label>
-        <input type="time" id="start-time" class="border rounded p-2">
+        <input type="time" id="start-time" name="start-time" class="border rounded p-2">
       </div>
 
       <div class="flex flex-col">
         <label for="end-time" class="text-gray-700">End Time:</label>
-        <input type="time" id="end-time" class="border rounded p-2">
+        <input type="time" id="end-time" name="end-time"  class="border rounded p-2">
       </div>
 
       <div class="flex flex-col">
         <label for="event-description" class="text-gray-700">Description:</label>
-        <textarea rows="3 " cols="50" maxlength="500" id="event-description" class="border rounded p-2" placeholder="Enter event description"></textarea>
+        <textarea rows="3 " cols="50" name="event-description" maxlength="500" id="event-description" class="border rounded p-2" placeholder="Enter event description"></textarea>
       </div>
 
       <div class="flex flex-col">
         <label for="event-location" class="text-gray-700">Location:</label>
-        <input type="text" id="event-location" class="border rounded p-2" placeholder="Enter event location">
+        <input type="text" name="event-location" id="event-location" class="border rounded p-2" placeholder="Enter event location">
       </div>
 
       <button type="submit"  class="mt-4 bg-[#ff6b00]  text-white font-bold py-2 px-4 rounded-full ">
