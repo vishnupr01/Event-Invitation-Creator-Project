@@ -42,9 +42,9 @@ document.getElementById("event-form").addEventListener("submit", function (e) {
 
 
     document.getElementById("event-name-display").textContent = eventName;
-    document.getElementById("event-date-display").textContent = `Date: ${formattedDate}`;
-    document.getElementById("event-time-display").textContent = `Time: ${formatedStartTime} - ${formatedEndTime}`;
-    document.getElementById("event-location-display").textContent = `Location: ${eventLocation}`;
+    document.getElementById("event-date-display").textContent = `${formattedDate}`;
+    document.getElementById("event-time-display").textContent = `${formatedStartTime} - ${formatedEndTime}`;
+    document.getElementById("event-location-display").textContent = `${eventLocation}`;
     document.getElementById("event-description-display").textContent = eventDescription;
     console.log(eventData);
     this.reset()
