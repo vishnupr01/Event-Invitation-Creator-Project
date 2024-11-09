@@ -39,6 +39,8 @@ document.getElementById("event-form").addEventListener("submit", function (e) {
 
     document.getElementById("main-div").classList.add("hidden")
     document.getElementById("event-invitation").classList.remove("hidden")
+    document.getElementById("body_id").classList.remove("bg-gradient-to-r", "from-[#2c3e50]", "to-[#3498db]");
+    document.getElementById("body_id").classList.add("bg-white");
 
 
     document.getElementById("event-name-display").textContent = eventName;
